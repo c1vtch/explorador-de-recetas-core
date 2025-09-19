@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Recetas</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <c:forEach var="ingrediente" items="${ingredientes}">
             <c:choose>
                 <c:when test="${recetaEncontrada}">
-                    <li>${ingrediente}</li>
+                    <li class="ingrediente">${ingrediente}</li>
                 </c:when>
             </c:choose>
         </c:forEach>
